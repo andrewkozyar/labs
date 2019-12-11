@@ -12,4 +12,4 @@ Lab_1: Здобуття навиків роботи з системою верс
 9. Командою `git pull` синхронізую локальну версію з Web.
 10. Зображення:
    
-   ![image]()
+   ![image](https://github.com/andrewkozyar/labs/blob/master/lab_1/photo_2019-07-26_14-40-25.jpg)
