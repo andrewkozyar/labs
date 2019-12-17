@@ -18,11 +18,11 @@
         - Ознайомлююся із коментарями, щоб зрозуміти структуру написання Dockerfile;
         - Замінюю посилання на власний Git репозиторій із моїм веб-сайтом та комічу даний Dockerfile.
 5. Створюю власний репозиторій на Docker Hub. Для цього заходжу у власний аккаунт на Docker Hub, після чого переходжу у вкладку `Repositories` і далі натискаю кнопку `Create new repository`. Даю назву репозиторію `lab4_devops`.
-6. Виконую білд (build) Docker імеджа та завантажую його до репозиторію. Для цього вказую правильну назву репозиторію та TAG. Оскільки мій репозиторій vetalvr/lab4_devops то команда буде виглядати:
+6. Виконую білд (build) Docker імеджа та завантажую його до репозиторію. Для цього вказую правильну назву репозиторію та TAG. Оскільки мій репозиторій andrewkozyar1/lab4_devops то команда буде виглядати:
     ```
-    sudo docker build -t andrewkozyar/lab4_devops:django -f Dockerfile.site .
+    sudo docker build -t andrewkozyar1/lab4_devops:django -f Dockerfile.site .
     sudo docker images
-    sudo docker push andrewkozyar/lab4_devops:django
+    sudo docker push andrewkozyar1/lab4_devops:django
     ``` 
     - [Посилання на Docker Hub репозиторій](https://cloud.docker.com/repository/docker/andrewkozyar/lab4_devops);
     - Посилання на скачування імеджа: `andrewkozyar/lab4_devops:django`.

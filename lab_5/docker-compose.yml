@@ -4,7 +4,7 @@ services:
     build:
       context: .
       dockerfile: Dockerfile.app
-    image: vetalvr/lab5_devops:compose-app
+    image: andrewkozyar1/lab5_devops:compose-app
     container_name: app
     depends_on:
       - redis
@@ -19,7 +19,7 @@ services:
     build:
       context: .
       dockerfile: Dockerfile.tests
-    image: vetalvr/lab5_devops:compose-tests
+    image: andrewkozyar1/lab5_devops:compose-tests
     container_name: tests
     depends_on:
       - hits

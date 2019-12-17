@@ -1,6 +1,6 @@
 FROM python:3.7-slim
 
-LABEL author="Bohdan"
+LABEL author="Andrew"
 LABEL version=1.0
 
 # оновлюємо систему

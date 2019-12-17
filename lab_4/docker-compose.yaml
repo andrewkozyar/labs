@@ -4,7 +4,7 @@ services:
     build:
       context: .
       dockerfile: Dockerfile.site
-    image: vetalvr/lab4_devops:compose-django
+    image: andrewkozyar1/lab4_devops:compose-django
     container_name: django
     networks:
       - publ
@@ -14,7 +14,7 @@ services:
     build:
       context: .
       dockerfile: Dockerfile.monitor
-    image: vetalvr/lab4_devops:compose-monitoring
+    image: andrewkozyar1/lab4_devops:compose-monitoring
     container_name: monitoring
     depends_on:
       - django
