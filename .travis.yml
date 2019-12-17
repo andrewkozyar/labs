@@ -27,10 +27,10 @@ jobs:
       install:
         - cd ./lab_4/
       script:
-        - docker build -t andrewkozyar1/lab4_devops:django-travis -f Dockerfile.site .
+        - docker build -t andrewkozyar1/lab4_devops:django-travis -f Dockerfile .
         - docker images
         - if [ "$TRAVIS_PULL_REQUEST" == "false" ]; then echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin; docker push andrewkozyar1/lab4_devops:django-travis; else echo "PR skip deploy"; fi
-        - docker build -t andrewkozyar1/lab4_devops:monitoring-travis -f Dockerfile.monitor .
+        - docker build -t andrewkozyar1/lab4_devops:monitoring-travis -f Dockerfile.monitoring .
         - docker images
         - if [ "$TRAVIS_PULL_REQUEST" == "false" ]; then echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin; docker push andrewkozyar1/lab4_devops:monitoring-travis; else echo "PR skip deploy"; fi
     - stage: "Build Lab 5."
