@@ -1,5 +1,5 @@
 STATES := app tests
-REPO := kozyar/lab5_devops
+REPO := andrewkozyar1/lab5_devops
 
 .PHONY: $(STATES)
 
